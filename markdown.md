@@ -84,11 +84,12 @@ print('Hello World')
 
 ## 6.이미지
 
-- ```![문자열](url)"```을 통해 이미지 사용가능
+- ```![문자열](url)"```을 통해 이미지 사용가능 / drop
 
 ![](markdown.assets/다운로드 (3).jpg)
 
-![다운로드 (3)](markdown.assets/다운로드 (3)-16569922870662.jpg)
+![다운로드 (3)](https://user-images.githubusercontent.com/106505931/177494902-540b9159-48d5-4ee7-94f6-02a51a3c336f.jpg)
+
 
 ## 7. Bloxkquote (인용문)
 
@@ -119,15 +120,13 @@ __bold text__
 
 **bold text**
 
-__bold text__
 
 ``` 
 *text* 
 _text_
 ```
 
-*text* 
-_text_
+*text*
 
 ```
 ~~hello~~
