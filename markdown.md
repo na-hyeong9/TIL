@@ -119,7 +119,6 @@ __bold text__
 
 **bold text**
 
-__bold text__
 
 ``` 
 *text* 
@@ -127,7 +126,6 @@ _text_
 ```
 
 *text*
-_text_
 
 ```
 ~~hello~~
