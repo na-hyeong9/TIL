@@ -126,7 +126,7 @@ __bold text__
 _text_
 ```
 
-*text* 
+*text*
 _text_
 
 ```
