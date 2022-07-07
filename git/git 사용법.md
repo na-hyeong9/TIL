@@ -20,13 +20,9 @@
 
   >  특정 파일/ 폴더의 변경 사항 추가
 
-
-
 - git commit-m <커밋메시지>
 
   > 커밋 (버전 기록)
-
-  
 
 - git log
 
@@ -38,15 +34,13 @@
 
   > 파일 삭제하기
 
-  
-
 - git status
 
   > 상태 확인
 
-  
-  
   ---
+  
+  
   
   ### ☑ 기본 흐름
 
@@ -103,10 +97,24 @@
   > 로컬 저장소에 원격 저장소에 있는 data를 저장
 
   
+  
+  🚩_상황_  [delete/modified]
+  
+  ```
+  git add <파일명> or git add .
+  git commit -m'<커밋 메세지>
+  git push <원격저장소> <브랜치>
+  ```
+  
+  - 파일 ___수정,생성,이동___  로컬 저장소에서 실행 후 커밋 -> push
+  
+  
+  
+  
+  
+  
 
 ###   ☑ 기본흐름
-
-
 
 ![depositphotos_196587212-stock-illustration-software-upload-user-data-cloud](https://user-images.githubusercontent.com/106505931/177663952-c354b134-a784-4ef8-9252-2b2e1c8b7363.jpg)
 
