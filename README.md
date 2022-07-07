@@ -1,5 +1,8 @@
 # ✔ Today I Learn (KDT 과정)
 
+![george-pagan-iii-PsifAN6_z-k-unsplash](https://user-images.githubusercontent.com/106505931/177666308-73146395-61ad-40c1-85e1-eb1ade0d43a2.jpg)
+
+
 ### 📝220705 
 
 > 마크다운 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/markdown/markdown.md)
