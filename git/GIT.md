@@ -108,11 +108,12 @@
 
 
 
-![depositphotos_196587212-stock-illustration-software-upload-user-data-cloud](C:\Users\HOME\Downloads\depositphotos_196587212-stock-illustration-software-upload-user-data-cloud.jpg)
+![depositphotos_196587212-stock-illustration-software-upload-user-data-cloud](https://user-images.githubusercontent.com/106505931/177663952-c354b134-a784-4ef8-9252-2b2e1c8b7363.jpg)
 
 
 
-> **원격 저장소**와 __로컬저장소__의 공유가 가능하다.
+
+> **원격 저장소**와 **로컬저장소**의 공유가 가능하다.
 >
 > ```git push``` 로컬 저장소 >>> 원격 저장소
 >
