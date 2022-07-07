@@ -1,4 +1,4 @@
-# ✔ Today I Learn
+# ✔ Today I Learn (KDT 과정)
 
 ### 📝220705 
 
