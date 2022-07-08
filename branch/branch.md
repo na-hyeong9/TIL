@@ -52,17 +52,17 @@ __(HEAD -> master)  뜻__
 
 ___Fork & pull model (저장소의 소유권이 없는 경우)___
 
-### 1) fork
+- Fork
 
 ``` 
-협업및 통합할 자료에서 fork click
+협업및 통합할 자료에서 Fork click
 ```
 
 ![](branch.assets/image-20220708120541800.png)
 
 
 
-### 2) git clone
+- git clone
 
 ```
 나의 GitHub에 fork된 주소를 clone 실행하여 로컬 저장소로 복사
@@ -72,7 +72,7 @@ ___Fork & pull model (저장소의 소유권이 없는 경우)___
 
 
 
-### 3) 로컬 저장소에서 수정
+- 로컬 저장소에서 수정
 
 ```
 code로 해당 폴더를 실행하여 수정 후 커밋
@@ -82,7 +82,7 @@ code로 해당 폴더를 실행하여 수정 후 커밋
 
 
 
-### 4) Full request
+- Full request
 
 ```
 보내는 방향 확인 후 click (수정한 원본 파일의 작업자 승인후 병합 완료)
