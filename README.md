@@ -8,4 +8,4 @@
 > Markdown 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/markdown/markdown.md)
 
 ### 📝220706
-> Git 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/git/GIT.md)
+> Git 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/git/git%20%EC%82%AC%EC%9A%A9%EB%B2%95.md)
