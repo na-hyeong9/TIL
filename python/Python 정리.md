@@ -80,7 +80,7 @@ _컴퓨터(Computer) ----> Caculation + Remember_
 
 - 코드 스타일 가이드 : 코드를 '어떻게 작성할지'에 대한 가이드라인
 
-  > PEPS
+  > 참고 [PEPS](https://www.python.org/dev/peps/pep-0008/)
 
 - Space Sensitive
 
