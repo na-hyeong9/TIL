@@ -60,13 +60,13 @@
 
 
 
-- git clone <url>
+- git clone <__url__>
 
   > 원격 저장소 복제
 
   
 
-- git remote add <원격 저장소 이름> <url>
+- git remote add <__원격 저장소__> <__url__>
 
   > 원격 저장소 추가 (일반적으로 origin)
 
@@ -78,19 +78,19 @@
 
   
 
-- git remote rm <원격 저장소>
+- git remote rm <__원격 저장소__>
 
   > 원격 저장소 삭제
 
   
 
-- git push <원격저장소> <브랜치>
+- git push <__원격저장소__> <__브랜치__>
 
   > 원격 저장소에 로컬 저장소에 있는 data를 저장
 
   
 
-- git pull <원격 저장소> <브랜치>
+- git pull <__원격 저장소__> <__브랜치__>
 
   > 로컬 저장소에 원격 저장소에 있는 data를 저장
 
