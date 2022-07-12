@@ -1,19 +1,20 @@
 # ✔ Today I Learn (KDT 과정)
 
-![george-pagan-iii-PsifAN6_z-k-unsplash](https://user-images.githubusercontent.com/106505931/177666308-73146395-61ad-40c1-85e1-eb1ade0d43a2.jpg)
+<img src="README.assets/다운로드 (2).jpg" alt="다운로드 (2)" style="zoom:67%;" />
 
 
-### 📝220705 
+
+### 📝1주차 [typora/ git/ github]
 
 > Markdown 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/markdown/markdown.md)
-
-### 📝220706
+>
 > Git/Github 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/git/git%20%EC%82%AC%EC%9A%A9%EB%B2%95.md)
-
-### 📝220707
+>
 > Git/Github <_branch_> 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/branch/branch.md)
 
-### 📝220711
+### 📝2주차
 
-> python 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EC%A0%95%EB%A6%AC.md)
+> python 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EC%A0%95%EB%A6%AC.md)
+>
+> python 제어문 [_추가 수정중 click_](https://github.com/na-hyeong9/TIL/tree/master/python)
 
