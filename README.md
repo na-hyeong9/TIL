@@ -1,6 +1,6 @@
 # ✔ Today I Learn (KDT 과정)
 
-<img src="README.assets/다운로드 (2).jpg" alt="다운로드 (2)" style="zoom:67%;" />
+<img src="README.assets/다운로드 (2).jpg" alt="다운로드 (2)" style="zoom: 67%;" />
 
 
 
