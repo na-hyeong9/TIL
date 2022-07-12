@@ -1,6 +1,6 @@
 # ✔ Today I Learn (KDT 과정)
 
-<img src="README.assets/다운로드 (2).jpg" alt="다운로드 (2)" style="zoom:67%;" />
+<img src="README.assets/다운로드 (2).jpg" alt="다운로드 (2)" style="zoom: 67%;" />
 
 
 
@@ -16,5 +16,5 @@
 
 > python 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EC%A0%95%EB%A6%AC.md)
 >
-> python 제어문 [_추가 수정중 click_](https://github.com/na-hyeong9/TIL/tree/master/python)
+> python 제어문 [_추가 수정중 click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
 
