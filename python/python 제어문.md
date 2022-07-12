@@ -26,6 +26,8 @@
   -10 
   ```
 
+  
+
 - 복수 조건문
 
   ```python
@@ -50,9 +52,7 @@
   보통
   ```
 
-  ![image-20220712232053647](C:\Users\HOME\AppData\Roaming\Typora\typora-user-images\image-20220712232053647.png)
-
-
+  
 
 - 조건 표현식
 
