@@ -6,7 +6,20 @@
 
 ### 🏸 Today coding
 
-- [codeup 풀이](https://github.com/na-hyeong9/TIL/tree/master/python/codeup/codeup)
+<details>
+<summary><strong>코드업 Python 기초 100제 풀이 click</strong></summary>
+   <ol> 
+       <li>기초</li>
+    <ul>
+        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/00.codeup_%EC%B6%9C%EB%A0%A5">출력</a></li>
+        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/01.codeup_%EC%9E%85%EC%B6%9C%EB%A0%A5">입출력</a></li>
+        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/02.codeup_%EA%B0%92%EB%B3%80%ED%99%98">값변환</a></li>
+        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/03.codeup_%EC%B6%9C%EB%A0%A5%EB%B3%80%ED%99%98">출력변환</href></a></li>
+        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/04.codeup_%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0">산술연산</href></a></li>
+    </ul>   
+    </ol>
+</details>
+
 
 
 
