@@ -6,22 +6,13 @@
 
 ### 🏸 Today coding
 
-<details>
-<summary><strong>코드업 Python 기초 100제 풀이 click</strong></summary>
-   <ol> 
-       <li>기초</li>
-    <ul>
-        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/00.codeup_%EC%B6%9C%EB%A0%A5">출력</a></li>
-        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/01.codeup_%EC%9E%85%EC%B6%9C%EB%A0%A5">입출력</a></li>
-        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/02.codeup_%EA%B0%92%EB%B3%80%ED%99%98">값변환</a></li>
-        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/03.codeup_%EC%B6%9C%EB%A0%A5%EB%B3%80%ED%99%98">출력변환</href></a></li>
-        <li> <a><href="https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup/codeup_%EA%B8%B0%EC%B4%88/04.codeup_%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0">산술연산</href></a></li>
-    </ul>   
-    </ol>
-</details>
+- python 실습  [_click_](https://github.com/na-hyeong9/TIL/tree/master/python/01.python%20%EC%8B%A4%EC%8A%B5)
 
+- 코드업 Python 기초 100제 풀이 
 
+  -  [기초 문제풀이](https://github.com/na-hyeong9/TIL/tree/master/python/00.codeup/codeup_%EA%B8%B0%EC%B4%88)
 
+    
 
 ### 📝1주차 [typora/ git/ github]
 
@@ -35,5 +26,11 @@
 
 - python 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EC%A0%95%EB%A6%AC.md)
 
-- python 제어문 [_추가 수정중 click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
+- python 제어문 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
+
+- python 함수 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%ED%95%A8%EC%88%98.md)
+
+- python 데이터구조 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
+
+  
 
