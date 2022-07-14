@@ -26,7 +26,7 @@
 # def 키워드 활용
 # 들여쓰기를 통해 Function
 
-# 함수는 함수명()으로 호출
+# 함수는 함수명()'소괄호'로 호출
 
 def foo():
     print(True)
@@ -129,7 +129,7 @@ print(a, type(a)) # None <class 'NoneType'>
     
     
     result = my_add(1, 2, 3)
-    print(result, type(resurt)) #(1, 2, 3) <class 'tuple'>
+    print(result, type(result)) #(1, 2, 3) <class 'tuple'>
     
     ```
 
@@ -157,7 +157,7 @@ print(a, type(a)) # None <class 'NoneType'>
 
 - map
 
-  모든 반복 가능한 것에 내가 적용하고 싶은 함수를 정ㄹ=함
+  모든 반복 가능한 것에 내가 적용하고 싶은 함수를 정함
 
   ```python
   # 숫자로 바꿔서 쓰고 싶다
@@ -184,3 +184,17 @@ print(a, type(a)) # None <class 'NoneType'>
   
 
 ![image-20220713114524154](Python 함수.assets/image-20220713114524154.png)
+
+
+
+## 예제 풀이
+
+```python
+#함수값에 이름을 붙인다.
+def r(a, b):
+    a = a * b
+    b = (a + b)* 2
+    return(a, b)
+print(20, 30)
+```
+

@@ -2,7 +2,7 @@
 
 # Python
 
-_컴퓨터(Computer) ----> Caculation + Remember_
+_컴퓨터(Computer) ----> Caculation + Remember_ __조작하고 계산한다.__
 
 ---
 
@@ -283,35 +283,7 @@ A = {'title' : 20}
   # 내부 순서가 없음
   ```
 
-  
-
-## 조건문
-
-조건표현식
-
-```python
-num = -10
-
-if num > 0:
-    value = 1️⃣num
-else vlaue = 2️⃣-num
-
-value = num if 1️⃣num >= 0 else 2️⃣-num
-```
-
-
-
-### 반복문
-
-- while 문
-
-  조건식이 참인 경우 반복적으로 코드를 실행
-
-  ```python
-  while True : 
-      print #무한히 실행
-      
-      
-  ```
-
-  
+- sep (' ')
+여러개를 동시에 출력
+- end ('\n) 기본값 개행
+뒤에 뭐를 붙일지
