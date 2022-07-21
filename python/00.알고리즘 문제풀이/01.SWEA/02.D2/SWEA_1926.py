@@ -22,15 +22,21 @@ N= int(input())
 
 
 for i in map(str, range(1,N + 1)):
+    cnt = 0
     game = ''
-    if i.count('3'):
-        game += '-'
-    elif i.count('6'):
-        game += '-'
-    elif i.count('9'):
-        game += '-'
-    else:
+
+    if 3 in i:
+        cnt += i.count('3')
+    elif 6 in i:
+        cnt += i.count('6')
+    elif 9 in i :
+        cnt += i.count('9')
+    
+    if cnt == 0:
         game += i
+    else:
+        game += cnt*'-'
+
             
     if len(game) == N:
         break
