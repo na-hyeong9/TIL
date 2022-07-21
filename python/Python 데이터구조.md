@@ -89,7 +89,7 @@ b = sorted(b)
 
   - 'separator'.join([iterable])
 
-    > 반복가능한(interable  : 문자, 튜플, ??) 컨테이너 요소들을 구분자(separator)로 합쳐 문자열을 반환
+    > 반복가능한(interable  : list, dict, set, str, bytes, tuple, range) 컨테이너 요소들을 구분자(separator)로 합쳐 문자열을 반환
 
     ```python
     names = ','.join(['홍길동','김철수'])
