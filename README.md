@@ -11,6 +11,7 @@
     <ul>
         <li><a href="https://github.com/na-hyeong9/01-PJT-01/tree/master/2%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%82%98%ED%98%95">
             python_220715</a></li>
+        <li><a href = "https://github.com/na-hyeong9/01-PJT-02/tree/main/2%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%82%98%ED%98%95">python_220722</a></li>
     </ul>
 </details>
 
@@ -23,8 +24,11 @@
             SWEA_D1</a></li>
         <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/01.SWEA/02.D2">
             SWEA_D2</a></li>
+        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/02.BOG">
+            BOG_bronze</a></li>
     </ul>
 </details>
+
 
 <details>
     <summary>python 실습</summary>
@@ -42,23 +46,16 @@
 - Git/Github 기초 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/git/git%20%EC%82%AC%EC%9A%A9%EB%B2%95.md)
 - Git/Github <_branch_> 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/branch/branch.md)
 
-
-
-### 📝 python 활용
+### 📝python 활용
 
 - python 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EC%A0%95%EB%A6%AC.md)
-
 - python 제어문 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%A0%9C%EC%96%B4%EB%AC%B8.md)
-
 - python 함수 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%ED%95%A8%EC%88%98.md)
-
 - python 데이터구조 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
-
-  
 
 ### 📝 알고리즘을 통한 SW 문제해결
 
-- 데이터 구조 & 알고리즘 [_click_]()
+- 데이터 구조 & 알고리즘 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
   
 
