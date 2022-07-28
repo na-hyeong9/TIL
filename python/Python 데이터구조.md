@@ -193,7 +193,7 @@ b = sorted(b)
 
 세트(set)
 
-### 딕셔너리(dictinary)
+### 딕셔너리(dictinary) 
 
 > 키 - 값 으로 접근 index 개념이 없음
 
@@ -215,7 +215,7 @@ b = sorted(b)
 
     > 값을 제공하는 key, value로 덮어씀
 
-    
+    참고 자료 : [알고리즘 파트](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC.md)
 
 ---
 
