@@ -14,6 +14,7 @@
         <li><a href = "https://github.com/na-hyeong9/01-PJT-02/tree/main/2%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%82%98%ED%98%95">python_220722</a></li>
     </ul>
 </details>
+
 <details>
     <summary>알고리즘 문제풀이</summary>
     <ul>
@@ -28,6 +29,7 @@
     </ul
 </details>
 
+
 <details>
     <summary>python 실습</summary>
     <ul>
@@ -35,6 +37,8 @@
             파이썬 기초</a></li>
     </ul>
 </details>
+
+
 ### 📝 markdown/ git/ github
 
 - Markdown 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/markdown/markdown.md)
