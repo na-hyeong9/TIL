@@ -20,10 +20,10 @@
 
 - python 데이터구조 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
-
-### 📝 알고리즘을 통한 SW 문제해결
+### 📝python 활용
 
 - 데이터 구조 & 알고리즘 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
+
 - 스택&큐 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%8A%A4%ED%83%9D%20%26%20%ED%81%90.md)
 - 힙&셋 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%ED%9E%99%20%26%20%EC%85%8B.md)
 - 이차원 리스트 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%9D%B4%EC%B0%A8%EC%9B%90%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
