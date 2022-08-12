@@ -144,7 +144,7 @@ modified: '2022-08-09T03:07:14.185Z'
 
    ```너비우선탐색(BFS)``` vs ```깊이우선탐색(DFS) ``` 
 
-![image-20220810134836226](python 그래프.assets/image-20220810134836226.png)
+![images_adorno10_post_67d1a2f5-14c5-4242-8721-d03d6984bd18_image](python 그래프.assets/images_adorno10_post_67d1a2f5-14c5-4242-8721-d03d6984bd18_image.png)
 
 
 
