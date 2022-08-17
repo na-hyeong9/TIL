@@ -10,7 +10,7 @@
 
 - Git/Github <_branch_> 정리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/branch/branch.md)
 
-### 📝python 활용
+### 📝 python
 
 - python 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EC%A0%95%EB%A6%AC.md)
 
@@ -20,13 +20,21 @@
 
 - python 데이터구조 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
-### 📝python 활용
+### 📝 알고리즘(Algorism)
 
 - 데이터 구조 & 알고리즘 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
-- 스택&큐 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%8A%A4%ED%83%9D%20%26%20%ED%81%90.md)
-- 힙&셋 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%ED%9E%99%20%26%20%EC%85%8B.md)
+- 딕셔너리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC.md)
+- 스택 & 큐 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%8A%A4%ED%83%9D%20%26%20%ED%81%90.md)
+- 힙 & 셋 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%ED%9E%99%20%26%20%EC%85%8B.md)
 - 이차원 리스트 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%9D%B4%EC%B0%A8%EC%9B%90%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+- 그래프 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EA%B7%B8%EB%9E%98%ED%94%84.md)
+
+### 📝 Database
+
+- 데이터베이스 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EC%B4%88.md)
+
+
 
 
 
