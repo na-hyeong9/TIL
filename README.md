@@ -20,21 +20,31 @@
 
 - python 데이터구조 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
 
-### 📝 알고리즘(Algorism)
+### 📝  알고리즘(Algorism)
 
 - 데이터 구조 & 알고리즘 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/Python%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B5%AC%EC%A1%B0.md)
+
 - 딕셔너리 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EB%94%95%EC%85%94%EB%84%88%EB%A6%AC.md)
+
 - 스택 & 큐 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%8A%A4%ED%83%9D%20%26%20%ED%81%90.md)
+
 - 힙 & 셋 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%ED%9E%99%20%26%20%EC%85%8B.md)
+
 - 이차원 리스트 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EC%9D%B4%EC%B0%A8%EC%9B%90%20%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+
 - 그래프 [_click_](https://github.com/na-hyeong9/TIL/blob/master/python/python%20%EA%B7%B8%EB%9E%98%ED%94%84.md)
 
 ### 📝 Database
 
 - database 기초 [_click_](https://github.com/na-hyeong9/TIL/blob/master/Database/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B8%B0%EC%B4%88.md)
+
 - database_SQL 쿼리 조건 [_click_](https://github.com/na-hyeong9/TIL/blob/master/Database/01.database_SQL%20%EC%BF%BC%EB%A6%AC%20%EC%A1%B0%EA%B1%B4.md)
+
 - database 기본 함수와 연산 [_click_](https://github.com/na-hyeong9/TIL/blob/master/Database/02.%EA%B8%B0%EB%B3%B8%20%ED%95%A8%EC%88%98%EC%99%80%20%EC%97%B0%EC%82%B0.md)
+
 - database 모델링 [_click_](https://github.com/na-hyeong9/TIL/blob/master/Database/03.%EB%AA%A8%EB%8D%B8%EB%A7%81.md)
+
+  
 
 
 ## 🏸 Today coding
