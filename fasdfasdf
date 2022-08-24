@@ -1,0 +1,302 @@
+[33mcommit 7dfb0f6041b5ad9027ce2d3bdc2609d0c35bcebc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Mon Aug 22 21:58:03 2022 +0900
+
+    DB_220822
+
+[33mcommit 025208ffbd7e4bdb7e6fb4d7c2a4106985e90eb8[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Aug 19 18:18:04 2022 +0900
+
+    DB_220819
+
+[33mcommit 12770e1c68989698f07b6130c8eb635adef62469[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 18 17:34:38 2022 +0900
+
+    DB_220818_자료정리
+
+[33mcommit b579c5978ad90d1d9b1285ffaa3b218bbf1fa450[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 18 16:19:54 2022 +0900
+
+    DB_220818
+
+[33mcommit 9abacd9bbecd9db6712d8626043ff47db0f70c16[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 18 16:18:33 2022 +0900
+
+    DB_220818
+
+[33mcommit c30b985503e02af6e9b521cc0ada4e9ebbf33ec0[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Aug 17 17:26:10 2022 +0900
+
+    README_220817
+
+[33mcommit f3ed471dcef7290883c04c8df527497877ed03e6[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Aug 17 17:20:13 2022 +0900
+
+    DB_220817
+
+[33mcommit a2380259feb4900d751bb36b9cb964d7a97d9d5c[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Aug 17 17:16:35 2022 +0900
+
+    DB_220817
+
+[33mcommit 28b8a44173b704702bde59e9e718929c68c62569[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 16 23:42:14 2022 +0900
+
+    BOJ_220816
+
+[33mcommit 1bd4c19ee43ae39ddbd0118530a3d819d143e028[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 16 16:39:19 2022 +0900
+
+    db_220816
+
+[33mcommit 764ccc31b07488ced317df16913bf993915816cc[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 16 16:35:06 2022 +0900
+
+    add gitignore
+
+[33mcommit 84859639745c643837cb88fc1578f153b6b5157f[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 16 13:22:50 2022 +0900
+
+    데이터베이스 기초
+
+[33mcommit fea0d820436fa476f94b8653ffde601de52b8ac6[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Aug 12 10:06:47 2022 +0900
+
+    그래프_220811
+
+[33mcommit 7a0eb0d069d77d5add999664914368bcdb386476[m
+Merge: 0d8d70c ef2867c
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Aug 12 09:50:48 2022 +0900
+
+    Merge branch 'master' of https://github.com/na-hyeong9/TIL
+
+[33mcommit 0d8d70c2dcf4a879cba63e85fed28f27464e5e30[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Aug 12 09:50:05 2022 +0900
+
+    python 그래프_220811
+
+[33mcommit ef2867c142c184d8d5611ff69176aef7ece956af[m
+Author: nana <106505931+na-hyeong9@users.noreply.github.com>
+Date:   Fri Aug 12 09:49:30 2022 +0900
+
+    Delete python/codeup/codeup/codeup_기초/04.codeup_산술연산 directory
+
+[33mcommit 68ad54e648a65165efc035763958d08c0e2fa325[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 11 18:38:22 2022 +0900
+
+    python 그래프.py
+
+[33mcommit 825bc42cb081cbd9cca4a91d211ea494278331ec[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Aug 10 00:57:39 2022 +0900
+
+    BOJ_220809
+
+[33mcommit cda9d9f0bf8e1b4be2139b0001bf765bd7580379[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 9 10:13:51 2022 +0900
+
+    이차원 리스트_220808
+
+[33mcommit ed790b0cd60c7275662c370a93cf74f754096109[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 4 22:13:56 2022 +0900
+
+    README_220804
+
+[33mcommit 44dc5f66e307c38b63090d173c41afbae77d2397[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 4 22:11:52 2022 +0900
+
+    README_220804
+
+[33mcommit 14eb21d93c131564d2b6b72320fe60a72014a724[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Aug 4 22:02:37 2022 +0900
+
+    이차원 리스트+추가_20220804
+
+[33mcommit 6c16b5960313553a7cfb05df64552a0496e2d3fb[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Aug 3 20:44:14 2022 +0900
+
+    이차원 리스트_220803
+
+[33mcommit 9a02a550b38bafe5cd20626fcf7f8f0de73ff5ee[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 23:45:38 2022 +0900
+
+    힙&셋 220802
+
+[33mcommit 32ababe8cde8a9b221847e69fd4406e8b6415120[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 23:21:13 2022 +0900
+
+    힙&셋 220802
+
+[33mcommit 43a49e8e67f039b0bc28e0be13e21c029033d9d2[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 09:34:15 2022 +0900
+
+    README_220801
+
+[33mcommit 40118a964f969743f09d1eb07ff4521e1da42710[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 09:28:31 2022 +0900
+
+    README_220801
+
+[33mcommit ab082cb766bc8a394110a396974e675af8a1fab8[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 09:25:17 2022 +0900
+
+    README_220801
+
+[33mcommit b56c7ca2b9751732ce4297aea2911544df17bcd5[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 09:20:41 2022 +0900
+
+    README_220801
+
+[33mcommit f958b17db553ae8b76da383a8b3c5ef979b5b8b6[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Aug 2 09:17:25 2022 +0900
+
+    스택&큐_220801
+
+[33mcommit 8946aad26636aa8a879ef40c0f838f01b9ea8ad3[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Jul 29 02:05:58 2022 +0900
+
+    python 데이터구조 추가
+
+[33mcommit a0be4f87956bc492f05741cb9b92aeedd32310ea[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Jul 29 02:02:50 2022 +0900
+
+    python_딕셔너리_알고리즘파트_필기
+
+[33mcommit eb1a8dd62800f8f61c0c609b8ce82d82cb475378[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Jul 27 11:06:06 2022 +0900
+
+    README_220727
+
+[33mcommit 6483c139a4abdef80c3ab2a4425cb4aa0ea2fb06[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Jul 27 10:57:26 2022 +0900
+
+    TIL 업데이트
+
+[33mcommit 9dd66a6416f49c1fa69f6beddd4e2ad3ff7e9589[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Jul 22 00:06:59 2022 +0900
+
+    간단한 369게임
+
+[33mcommit 88fd428102645cf8fb77752fcafd3807d03a1a8f[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Jul 21 23:54:08 2022 +0900
+
+    SWEA_D2_220721_수정
+
+[33mcommit 82ea3e0ee657dd38cd4217e8280054287003f5fb[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Jul 21 23:40:44 2022 +0900
+
+    README 수정중
+
+[33mcommit 621952ea87878ef5416ff08d04d33150b73ed5a7[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Jul 21 23:37:34 2022 +0900
+
+    README 수정중
+
+[33mcommit 575f3e23ad536471be88923a7ee4b8e257627edd[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Jul 21 23:36:48 2022 +0900
+
+    python 폴더 이동
+
+[33mcommit 1d2ef9eee7c6d557622dc9d8748dffcf74461f08[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Jul 21 23:31:13 2022 +0900
+
+    SWAE_D2_220721
+
+[33mcommit 0a5c7cfdbaa172e32c955efd1fbd585b5648d8a2[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Thu Jul 21 11:00:09 2022 +0900
+
+    SWEA_220721
+
+[33mcommit 8d66efd166cf521bf8a416247787067e38095735[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Wed Jul 20 17:03:15 2022 +0900
+
+    SWEA풀이_220720
+
+[33mcommit 46f1eb96be6e32b45c130b0b5179267c155b22f8[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Jul 19 16:52:50 2022 +0900
+
+    SWEA풀이_220719
+
+[33mcommit b07f0e2e24c983d986a2cd3da539965dda1336c9[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Jul 19 16:51:25 2022 +0900
+
+    codeup_폴더_이동
+
+[33mcommit 64a2c04560b4783f08dbcd428bb40018945b0f8b[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Jul 19 16:48:05 2022 +0900
+
+    python_실습_220719
+
+[33mcommit a20d7c3ecf8f73ff31649820dbc7b43cd76edd54[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Tue Jul 19 02:15:52 2022 +0900
+
+    codeup풀이_220718
+
+[33mcommit 28a84134b4a876bb760aa660a2c00d27663b72d9[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Mon Jul 18 17:39:16 2022 +0900
+
+    python_예제_220718
+
+[33mcommit 85c4e60e39a1e1b1fdfeeb58700a94c1628c0729[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Mon Jul 18 17:07:16 2022 +0900
+
+    python_실습_220718
+
+[33mcommit 644c382295e0b2bb8be96d0120b4b34a4e626530[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Mon Jul 18 16:49:02 2022 +0900
+
+    python_실습예제_220718
+
+[33mcommit 097c3e0429e3a2090c8921013a20f40e48aaa305[m
+Author: na_hyeong <skgud9511@gmail.com>
+Date:   Fri Jul 15 03:58:02 2022 +0900
+
+    REDAME UPDATE_220715
+
+[33mcommit a72d6c2
