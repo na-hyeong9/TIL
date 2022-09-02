@@ -1,0 +1,103 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    min-width: 1280px;
+    color: #333333;
+    height: 10000px;
+  }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 40px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+  
+.ul_nav {
+    display: flex;
+    list-style: none;
+}
+
+.img_logo {
+    height: 60px;
+}
+
+.nav_item {
+    margin: 1rem; 
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+}
+
+.banner_title {
+    color: black;
+    font-size: 3rem;
+    font-weight: bolder;
+
+}
+
+.div_middle {
+    display: flex;
+}
+
+.section {
+    background-color: rgb(228, 228, 228);
+    width: 80%;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.aside {
+    width: 20%;
+    height: 100%;
+    padding: 2rem;
+
+    
+}
+
+.ul_aside {
+    list-style: none;
+    padding: 0;
+}
+
+.img_section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img_card {
+    width:300px;
+    border-radius: 1rem;
+}
+
+.font_movie {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    text-align: center; 
+}
+.footer_font {
+    color:aliceblue;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
