@@ -68,14 +68,16 @@
 </details>
 <details>
     <summary>WEB_front-end</summary>
-    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_02/%EC%8B%A4%EC%8A%B51/index.html">
+    <ul>
+        <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_02/%EC%8B%A4%EC%8A%B51/index.html">
         WEB_220830</a></li>
-    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_03/commerce%20-%20%EA%B3%B5%EC%9C%A0%EC%9A%A9/index.html">
+        <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_03/commerce%20-%20%EA%B3%B5%EC%9C%A0%EC%9A%A9/index.html">
         WEB_220901</a></li>
-    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_04/index.html">
+    	<li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_04/index.html">
         WEB_220902</a></li>
-    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_05/login.html">
-        WEB_220906</a></li>
+    	<li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_05/login.html">
+        WEB_220906</a></li>  
+    </ul>
 </details>
 <details>
     <summary>알고리즘 문제풀이</summary>
@@ -88,8 +90,7 @@
             SWEA_D2</a></li>        
         <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/02.BOG">
             BOG</a></li>
-    </ul>
-    <li><a href="https://github.com/na-hyeong9/Baekjoon">
+        <li><a href="https://github.com/na-hyeong9/Baekjoon">
             BOGhub</a></li>
     </ul>
 </details>
@@ -100,6 +101,15 @@
             파이썬 기초</a></li>
     </ul>
 </details>
+
+
+
+
+
+
+
+
+
 
 
 
