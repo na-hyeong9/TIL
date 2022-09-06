@@ -44,6 +44,15 @@
 
 - database 모델링 [_click_](https://github.com/na-hyeong9/TIL/blob/master/Database/03.%EB%AA%A8%EB%8D%B8%EB%A7%81.md)
 
+
+### 📝 web
+
+- happy web [_click_](https://github.com/na-hyeong9/TIL/blob/master/web/00.happy%20web.md)
+
+- css [_click_](https://github.com/na-hyeong9/TIL/blob/master/web/01.css.md)
+
+- html [_click_](https://github.com/na-hyeong9/TIL/blob/master/web/02.html.md)
+
   
 
 
