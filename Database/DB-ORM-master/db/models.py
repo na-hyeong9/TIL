@@ -4,12 +4,20 @@ from django.db import models
 # models.Model 내부 클래스를 상속 받는다. 
 # 왜 상속 받을까요? 기능들을 활용하고 싶어서. (미리 만들어진)
 class Director(models.Model):
-    name = models.TextField(null=True)
-    debut = models.DateTimeField(null=True)
-    country = models.TextField(null=True)
+    name = models.TextField()
+    debut = models.DateTimeField()
+    country = models.TextField()
 
 class Genre(models.Model):
-    title = models.TextField(null=True)
+    title = models.TextField()
+
+class Movie(models.Model):
+    director = models.ForeignKey(Director,on_delete=models.CASCADE)
+    genre = models.ForeignKey(Genre,on_delete=models.CASCADE)
+    title = models.TextField()
+    opening_date = models.DateField()
+    running_time = models.IntegerField()
+    screening = models.BooleanField()
 
 
 

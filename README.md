@@ -66,8 +66,33 @@
         <li><a href = "https://github.com/na-hyeong9/01-PJT-02/tree/main/2%ED%9A%8C%EC%B0%A8/%EA%B9%80%EB%82%98%ED%98%95">python_220722</a></li>
     </ul>
 </details>
-<details>    <summary>알고리즘 문제풀이</summary>    <ul>        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/00.codeup_%EA%B8%B0%EC%B4%88">            코드업 Python 기초 100제 풀이</a></li>        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/01.SWEA/00.D1">            SWEA_D1</a></li>        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/01.SWEA/02.D2">            SWEA_D2</a></li>        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/02.BOG">            BOG</a></li>    </ul></details>
-
+<details>
+    <summary>WEB_front-end</summary>
+    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_02/%EC%8B%A4%EC%8A%B51/index.html">
+        WEB_220830</a></li>
+    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_03/commerce%20-%20%EA%B3%B5%EC%9C%A0%EC%9A%A9/index.html">
+        WEB_220901</a></li>
+    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_04/index.html">
+        WEB_220902</a></li>
+    <li><a href="https://github.com/na-hyeong9/TIL/blob/master/web/web_05/login.html">
+        WEB_220906</a></li>
+</details>
+<details>
+    <summary>알고리즘 문제풀이</summary>
+    <ul>        
+        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/00.codeup_%EA%B8%B0%EC%B4%88">
+            코드업 Python 기초 100제 풀이</a></li>        
+        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/01.SWEA/00.D1">
+            SWEA_D1</a></li>
+        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/01.SWEA/02.D2">
+            SWEA_D2</a></li>        
+        <li><a href="https://github.com/na-hyeong9/TIL/tree/master/python/00.%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4/02.BOG">
+            BOG</a></li>
+    </ul>
+    <li><a href="https://github.com/na-hyeong9/Baekjoon">
+            BOGhub</a></li>
+    </ul>
+</details>
 <details>
     <summary>python 실습</summary>
     <ul>
@@ -75,6 +100,11 @@
             파이썬 기초</a></li>
     </ul>
 </details>
+
+
+
+
+
 
 
 
