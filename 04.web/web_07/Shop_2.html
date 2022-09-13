@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="col mb-5lapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#!">All Products</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 px-5 h-700">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-sm-12">
+                <img class="img-fluid mb-5" src="img/6c757d.jpg" alt="">
+            </div>
+            <div class="col">
+                <div class="small mb-2">SKU: BST-498</div>
+                <!-- 마진 불가 -->
+                <h2 class="display-4 fw-bold">Shop item template</h2> 
+                <p class="fs-4 mb-5"><del>$45.00</del> $40.00</p>
+                <p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, explicabo, debitis adipisci, inventore repudiandae eveniet nam architecto rerum sunt deserunt dolor commodi voluptas nesciunt. Ullam sapiente assumenda natus odit deleniti!</p>  
+                <div class="d-flex">
+                    <input  class="form-control me-3" style="width:3rem;" type="num">
+                    <span><button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Add to cart
+                    </button></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 px-5">
+        <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 py-5">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <img src="img/clothes-g053ebbc54_1280.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body text-center p">
+                        <h5 class="card-title fw-bold mt-1">Fancy Product</h5>
+                        <p class="card-text">$40.00 - $80.00</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card card h-100">
+                    <img src="img/dog-g1bc307e20_1280.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body text-center ">
+                        <!-- 뱃지 -->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <h5 class="card-title fw-bold mt-1">Animal Item</h5>
+                        <p class="card-text"><del>$20.00</del> $18.00</p>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card card h-100">
+                    <img src="img/jeans-ge186f5731_1280.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body text-center p">
+                        <!-- 뱃지 -->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+                        <h5 class="card-title fw-bold mt-1">Jeans</h5>
+                        <p class="card-text"><del>$50.00</del> $25.00</p>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card card h-100">
+                    <img src="img/shopping-g149b9ae8a_1280.jpg" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body text-center p">
+                        <h5 class="card-title fw-bold mt-1">Popular Item</h5>
+                        <p class="card-text">$40.00</p>
+                        <div class="d-flex justify-content-center small text-warning mb-2">
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                            <div class="bi-star-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">MORE</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-5 bg-dark">
+        <div class="container text-white"><p class="text-center m-0">Copyright © Your Website 2022</p></div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

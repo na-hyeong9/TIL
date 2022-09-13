@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1280px;
+  color: #333333;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 3rem;
+  padding: 1rem;
+  background-color: aliceblue;
+}
+.title {
+  font-weight: bold;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float:left;
+  margin-left: 10px;
+}
+
+/* 배너 */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  background-image: url('../assets/apparel.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* 본문 */
+
+.container {
+  width: 1280px;
+  height: auto;
+  margin :auto;
+  padding: 3rem;
+  display: flex;
+  justify-content:center
+}
+
+.about-img {
+  width: 500px;
+  border-radius: 10%;
+  padding: 1.5rem;
+}
+
+.about {
+  text-align: center;
+}
+
+.sub_title {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.content {
+  padding: auto;
+  text-align: left;
+  line-height:2
+}
+
+.more_title {
+  text-align: center;
+}
+
+.more {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.more_img {
+  width: 64px;
+  margin-bottom: 1rem;
+}
+
+.more_section {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+.more_font {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.about_section {
+  padding: 3rem;
+  margin: 3rem;
+}
