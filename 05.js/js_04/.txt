@@ -1,0 +1,24 @@
+        const ballContainer = document.createElement('div')
+        ballContainer.classList.add('ball-container')
+
+        const lottoDiv = document.createElement('div')
+        ballContainer.appendChild(lottoDiv)
+        
+        const numbers = []
+        while (numbers.length < 6) {
+            let ran = Math.floor(Math.random() * 45) + 1
+            if (numbers.indexOf(ran) === -1) {
+                numbers.push(ran)
+            }
+        }
+
+        for (let number of numbers) {
+            const ball = document.createElement('div')
+            ball.classList.add('ball')
+            ball.innerText = number
+            lottoDiv.appendChild(ball)
+        }
+       
+
+        const result = document.querySelector('#result')
+        result.appendChild(ballContainer)
