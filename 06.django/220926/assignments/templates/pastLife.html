@@ -1,0 +1,13 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="mt-5">
+        <h1 class="text-center"> {{ name }}님의 전생은 <span class="text-center px-1 border border-5 border border-danger"> {{ pastLife.name }}</span> 입니다. </h1>
+        <div class="d-flex justify-content-center mt-5">
+        <img src="{{ pastLife.src }}">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

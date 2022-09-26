@@ -13,11 +13,11 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center mt-3 fw-bold">오늘의 저메추</h1>
-        <div class="d-flex justify-content-center mt-5">
+        <h1 class="text-center mt-3 fw-bold">오늘의 <span class="text-danger">저</span><span class="text-primary">메</span><span class="text-success">추🤗</span></h1>
+        <div class="d-flex justify-content-center mt-3">
             <button type="button" onClick="refreshPage()">추천하기</button>
         </div>
-        <p class="text-center mt-3 fw-bold fs-3">오늘은 <span class="text-danger">{{ food }}</span> 입니다.</p>
+        <p class="text-center mt-5 fw-bold fs-3">오늘은 <span class="text-danger">{{ food }}</span> 입니다.</p>
         <div class="d-flex justify-content-center mt-3">
             <img class="p-3 border border-3 border border-grey"style="width: 800px; height: 450px;"src="{{ foodImg }}" alt="">
         </div>
