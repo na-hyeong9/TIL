@@ -13,19 +13,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path
-from practices import views as v1
 from assignments import views as v2
-
+from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('index/', v1.index),
-    path('ping/', v1.ping),
-    path('pong/', v1.pong),
-    path('is-odd-even/<int:num>', v2.oddeven),
-    path('calculate/<int:num1>/<int:num2>', v2.calculate),
-    path('pl_form/', v2.pl_form),
-    path('pastLife/', v2.pastLife)
+    path("admin/", admin.site.urls),
+    path("is-odd-even/<int:num>", v2.oddeven),
+    path("calculate/<int:num1>/<int:num2>", v2.calculate),
+    path("pl_form/", v2.pl_form),
+    path("pastLife/", v2.pastLife),
+    path("articles/", include("articles.urls")),
+    path("practices/", include("practices.urls")),
 ]
