@@ -27,4 +27,5 @@ urlpatterns = [
     path("pastLife/", v2.pastLife),
     path("articles/", include("articles.urls")),
     path("practices/", include("practices.urls")),
+    path("posts/", include("posts.urls")),
 ]
