@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+    <form action="{% url 'todos:index' %}">
+        <p>할 일: {{ todos.content }}</p>
+        <p>우선 순위: {{ todos.priority }}</p>
+        <p>마감 기한: {{ todos.deadline }}</p>
+    </form>
+
+</body>
+{% endblock %}
