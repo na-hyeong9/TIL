@@ -34,6 +34,8 @@ def create(request):
 
     return render(request, "posts/create.html", context)
 
+def details(request):
+    return render(request, "posts/details.html")
 
 def delete(request, pk):
     # pk에 해당하는 글 삭제
