@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>글 수정 edit.html</h1>
+<!-- 특정 pk를 가진 데이터를 불러오기 위해 pk를 동적인자로 전달 -->
+<form action="{% url 'todos:update' todo.pk %}">
+  <h1 class="mt-5 fw-bold text-center">To-do</h1>
+  <div class="container">
+      <div class="my-3">
+  
+          <form action="{% url 'todos:table' %}">
+              <!-- 할 일 -->
+              <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">할 일</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" name="content">
+              </div>
+              <!-- 우선 순위 -->
+              <div class="input-group mb-3">
+                  <span class="input-group-text" for="inputGroupSelect01">우선 순위</span>
+                  <select class=" form-select" id="inputGroupSelect01" name="priority">
+                      <option selected>선택하기</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                  </select>
+              </div>
+              <!-- 마감 기한 -->
+              <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">마감 기한</span>
+                  <input type="date" class="form-control" aria-label="Sizing example input" name="deadline">
+              </div>
+              <div>
+                  <input type="submit" class="form-control bg-primary text-white" aria-label="Sizing example input">
+              </div>
+          </form>
+      </div>
+</form>
+
+{% endblock %}

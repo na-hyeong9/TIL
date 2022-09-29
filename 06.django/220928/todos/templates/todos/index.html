@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid #bcbcbc;
+        text-align: center;
+    }
+</style>
 <h1 class="mt-5 fw-bold text-center">To-do</h1>
 <div class="container">
     <div class="my-3">
@@ -9,7 +17,7 @@
             <!-- 할 일 -->
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">할 일</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" name="content">
+                <input type="text" class="form-control" aria-label="todo" name="content">
             </div>
             <!-- 우선 순위 -->
             <div class="input-group mb-3">
@@ -26,26 +34,101 @@
             <!-- 마감 기한 -->
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">마감 기한</span>
-                <input type="date" class="form-control" aria-label="Sizing example input" name="deadline">
+                <input type="date" class="form-control" aria-label="todo" name="deadline">
             </div>
             <div>
-                <input type="submit" class="form-control bg-primary text-white" aria-label="Sizing example input">
+                <input type="submit" class="form-control bg-primary text-white" aria-label="todo">
             </div>
         </form>
-
     </div>
-    <ul>
+    <table style="width: 100%;">
+        <!-- 테이블 헤더 -->
+        <th>우선 순위</th>
+        <th>내용</th>
+        <th>생성 날짜</th>
+        <th>마감 기한</th>
+        <th>진행 상태</th>
+        <th>상태 변경</th>
+        <th>수정</th>
+        <th>삭제</th>
+        <!--목록 -->
         {% for todo in todos %}
-
-        <li>할 일: {{ todo.content }} | 우선 순위: {{ todo.priority }} | 마감 기한: {{ todo.deadline }}
-            <a href="">
-                [수정]
-            </a>/
-            <a href="{% url 'todos:delete' todo.id %}">
-                [삭제]
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
+        <tr>
+            <td>{{ todo.priority }}</td>
+            <td>{{ todo.content }}</td>
+            <td>{{ todo.created_at }}</td>
+            <td>{{ todo.deadline }}</td>
+            <td>{{ todo.completed }}</td>
+            <td></td>
+            <td>
+                <!-- Button trigger modal -->
+                <a href="{% url 'todos:edit' todo.pk %}" class="btn btn-primary btn-sm my-1" data-bs-toggle="modal"
+                    data-bs-target="#todo.pk" data-bs-whatever="@mdo">
+                    수정
+                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="todo.pk" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="todo.pkLabel">수정</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="{% url 'todos:update' todo.pk %}">
+                                    <!-- 할 일 -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">할
+                                            일</span>
+                                        <input value="{{ todo.content }}" type="text" class="form-control"
+                                            aria-label="todo" name="content">
+                                    </div>
+                                    <!-- 우선 순위 -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" for="inputGroupSelect01">우선 순위</span>
+                                        <select class=" form-select" id="inputGroupSelect01" name="priority">
+                                            <option value="{{ todo.priority }}" selected hidden>{{
+                                                todo.priority }}</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <!-- 마감 기한 -->
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">마감
+                                            기한</span>
+                                        <input value="{{ todo.deadline }}" type="date" class="form-control"
+                                            aria-label="todo" name="deadline">
+                                    </div>
+                                    <div>
+                                        <input type="submit" class="form-control bg-primary text-white"
+                                            aria-label="todo">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
 </div>
+</td>
+<td>
+    <a href="{% url 'todos:delete' todo.pk %}" class="btn btn-danger btn-sm my-1">
+        삭제
+    </a>
+</td>
+</th>
+</tr>
+{% endfor %}
+
+</table>
+
 {% endblock %}
