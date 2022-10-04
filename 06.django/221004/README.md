@@ -283,8 +283,23 @@ def detail(request, pk):
 특정한 글을 삭제한다.
 
 http://127.0.0.1:8000/articles/int:pk/delete/
-```html
 
+✔ urls.py
+
+```python
+path("<int:pk>/delete/", views.delete, name="delete"),
+```
+
+
+
+✔ views.py
+
+```python
+def delete(request, pk):
+    # pk에 해당하는 글 삭제
+    Article.objects.get(pk=pk).delete()
+
+    return redirect("todos:index")
 ```
 
 ### 5. 수정하기
@@ -310,30 +325,22 @@ def update(request, pk):
     return render(request, "articles/update.html", context)
 ```
 
-✔ templat( detail.html )
+✔ templat( update.html )
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>게시물</title>
-</head>
-
-<body>
-    <h1>{{ article.pk }}번 게시글</h1>
-    <h3>제목</h3>
-    <p>{{ article.title }}</p>
-    <h3>작성일</h3>
-    <p>{{ article.created_at }} | {{ article.updated_at }}</p>
-    <h3>내용</h3>
-    <p>{{ article.content }} </p>
-</body>
-
-</html>
+```python
+def update(request, pk):
+    article = Article.objects.get(pk=pk)
+    if request.method == "POST":
+        # POST : input 값 가져와서, 검증하고, DB에 저장
+        article_form = ArticleForm(request.POST, instance=article)
+        if article_form.is_valid():
+            # 유효성 검사 통과하면 저장하고, 상세보기 페이지로
+            article_form.save()
+            return redirect("articles:detail", article.pk)
+        # 유효성 검사 통과하지 않으면 => context 부터해서 오류메시지 담긴 article_form을 랜더링
+    else:
+        # GET : Form을 제공
+        article_form = ArticleForm(instance=article)
+    context = {"article_form": article_form}
+    return render(request, "articles/update.html", context)
 ```
-
-### 
