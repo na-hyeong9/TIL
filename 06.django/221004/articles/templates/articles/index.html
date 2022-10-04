@@ -15,6 +15,9 @@
     <h3><a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></h3>
     {{ article.created_at }} {{ article.updated_at }}
     {% endfor %}
+    <a href="/articles/delete/{{ articles.pk }}">
+        [삭제]
+    </a>
 </body>
 
 </html>

@@ -18,7 +18,7 @@
     <p>{{ article.content }} </p>
     <!-- 특정 게시물 삭제이기 때문에 article.pk 입력 -->
     <a href="{% url 'articles:update' article.pk %}">수정하기</a>
-
+    <a href="{% url 'articles:index' %}">목록으로 돌아가기</a>
 </body>
 
 </html>
