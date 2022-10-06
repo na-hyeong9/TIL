@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block body%}
+<h1 class="my-3 text-center">게시판</h1>
+<div class="container">
+    <img class="img-fluid" src="{% static 'images/h2.jpg' %}" alt="">
+    <div class=" my-3 d-flex justify-content-end">
+        <a class="btn btn-primary btn-small" href="{% url 'articles:create' %}">작성하기</a>
+    </div>
+    {% for article in articles %}
+    <h3><a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></h3>
+    {{ article.created_at }} {{ article.updated_at }}
+    {% endfor %}
+    <a href="{% url 'articles:delete' article.pk %}">
+        [삭제]
+    </a>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+<body>
+</body>
+<form action="{% url 'articles:create' %}" method="POST">
+
+    {% csrf_token %}
+    {% bootstrap_form article_form %}
+    {# article_form.as_p #}
+    <!-- <label for="title">제목 : </label>
+    <input type="text" name="title" id="title"> -->
+    <!-- <label for="content">내용 : </label>
+    required : 요구하다. 필수적으로 기입 되어야한다.
+    <textarea name="content" id="content" cols="30" rows="10" required></textarea> -->
+    <!-- input type="submit" value="글 쓰기"> -->
+    {% bootstrap_button button_type="submit" content="OK" %}
+</form>
+
+</html>

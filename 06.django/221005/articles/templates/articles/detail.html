@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block body %} 
+<h1>{{ article.pk }}번 게시글</h1>
+<h3>제목</h3>
+<p>{{ article.title }}</p>
+<h3>작성일</h3>
+<p>{{ article.created_at }} | {{ article.updated_at }}</p>
+<h3>내용</h3>
+<p>{{ article.content }} </p>
+<!-- 특정 게시물 삭제이기 때문에 article.pk 입력 -->
+<a href="{% url 'articles:update' article.pk %}">수정하기</a>
+<a href="{% url 'articles:index' %}">목록으로 돌아가기</a>
+{% endblock %}
