@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block body %} 
+<h1>{{ movie.pk }}번 게시글</h1>
+<h3>제목</h3>
+<p>{{ movie.title }}</p>
+<span>러닝 타임</hspan>
+<p>{{ movie.title }}</p>
+<h3>내용</h3>
+<p>{{ movie.summary }} </p>
+<!-- 특정 게시물 삭제이기 때문에 movie.pk 입력 -->
+<a href="{% url 'movie:update' movie.pk %}">수정하기</a>
+<a href="{% url 'movie:index' %}">목록으로 돌아가기</a>
+{% endblock %}

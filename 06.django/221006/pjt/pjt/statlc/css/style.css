@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(9, 9, 14);
+    padding: 8px 12px;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+.nav_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.nav_logo i {
+    color: orange;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav_menu li {
+    padding: 8px 12px;
+}

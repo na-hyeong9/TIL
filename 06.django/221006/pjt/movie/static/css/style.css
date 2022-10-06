@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(3, 3, 66);
+    padding: 8px 12px;
+    margin-bottom: 3rem;
+}
+
+.navbar_a {
+    text-decoration: none;
+    color: pink;
+}
+
+.nav_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.nav_logo i {
+    color: orange;
+}
+
+.nav_menu {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.nav_menu li {
+    padding: 8px 12px;
+}

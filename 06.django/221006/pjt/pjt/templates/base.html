@@ -1,0 +1,37 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 정보 제공 서비스</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/9dfbf66130.js" crossorigin="anonymous"></script>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<!-- css 적용 구간 -->
+{% block style %}
+{% endblock %}
+
+<body>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <i class="fa-solid fa-film"></i>
+            <a class="navbar_a" href="">Movie</a>
+        </div>
+        <ul class="nav_menu">
+            <li><a class="navbar_a" href="">목록</a></li>
+            <li><a class="navbar_a" href="movie/new.html">작성</a></li>
+        </ul>
+    </nav>
+    <!-- body 적용 구간 -->
+    {% block body %}
+    {% endblock %}
+
+</body>
+
+</html>
