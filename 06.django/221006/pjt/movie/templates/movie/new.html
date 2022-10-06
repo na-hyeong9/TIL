@@ -5,21 +5,17 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% endblock %}
 
-
-<body>
-</body>
-<form action="{% url 'movie:create' %}" method="POST">
-
-    {% csrf_token %}
-    {% bootstrap_form movie_form %}
-    {# movie_form.as_p #}
-    <!-- <label for="title">제목 : </label>
-    <input type="text" name="title" id="title"> -->
-    <!-- <label for="content">내용 : </label>
-    required : 요구하다. 필수적으로 기입 되어야한다.
-    <textarea name="content" id="content" cols="30" rows="10" required></textarea> -->
-    <!-- input type="submit" value="글 쓰기"> -->
-    {% bootstrap_button button_type="submit" content="OK" %}
-</form>
-
-</html>
+{% block body %}
+<section class="container">
+    <h1 class="fw-bold my-3">작성하기</h1>
+    <div class="mb-3">
+        <form action="{% url 'movie:create' %}" method="POST">
+            {% csrf_token %}
+            {% bootstrap_form movie_form %}
+            <div class="d-grid gap-2">
+                {% bootstrap_button content="작성 완료" button_type="submit" button_class="btn-dark" %}
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -5,21 +5,20 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% endblock %}
 
-
 {% block body%}
-<section class="container">
-    <table style="width: 100%;">
-        <thead>
-            <tr>
-                <th>pk</th>
-                <th>영화 제목</th>
+<section class="container ">
+    <table class="table text-center">
+        <thead class="bg-secondary text-white">
+            <tr class="fs-5">
+                <th scope="col">pk</th>
+                <th scope="col">영화 제목</th>
             </tr>
         </thead>
         <tbody>
             {% for movie in movies %}
             <tr>
                 <td>{{ movie.pk }}</td>
-                <td><a href="{% url 'movie:detail' movie.pk %}"></a>{{ movie.title }}</td>
+                <td><a class="title_a" href="{% url 'movie:detail' movie.pk %}">{{ movie.title }}</a></td>
             </tr>
             {% endfor %}
         </tbody>

@@ -1,4 +1,3 @@
-
 {% extends 'base.html' %}
 {% load static %}
 {% load django_bootstrap5 %}
@@ -7,15 +6,45 @@
 {% endblock %}
 
 
-{% block body %} 
-<h1>{{ movie.pk }}번 게시글</h1>
-<h3>제목</h3>
-<p>{{ movie.title }}</p>
-<span>러닝 타임</hspan>
-<p>{{ movie.title }}</p>
-<h3>내용</h3>
-<p>{{ movie.summary }} </p>
-<!-- 특정 게시물 삭제이기 때문에 movie.pk 입력 -->
-<a href="{% url 'movie:update' movie.pk %}">수정하기</a>
-<a href="{% url 'movie:index' %}">목록으로 돌아가기</a>
+{% block body %}
+<div class="container">
+    <div class="d-flex justify-content-start d-flex align-items-end mb-3">
+        <h1 class="my-3">{{ movie.title }}</h1>
+        <span class="my-3">{{ movie.running_time }}분</span>
+    </div>
+    <!-- 수정/삭제 -->
+    <div class="d-flex justify-content-end d-flex align-items-center">
+        <a class="mx-1 btn btn-outline-primary btn-sm" href="{% url 'movie:update' movie.pk %}">수정하기</a>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            삭제하기 </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"><i class="fa-solid fa-check"></i> <span
+                                class="fw-border">경고</span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        정말 삭제하시겠습니까?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                        <a class="btn btn-primary" href="{% url 'movie:delete' movie.pk %}">삭제하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>줄거리</h3>
+        <p>{{ movie.summary }} </p>
+    </div>
+</div>
 {% endblock %}

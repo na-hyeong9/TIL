@@ -9,12 +9,13 @@
 
 .navbar_a {
     text-decoration: none;
-    color: pink;
+    color: white;
 }
 
 .nav_logo {
     font-size: 24px;
     color: white;
+    margin: 0px 24px;
 }
 
 .nav_logo i {
@@ -22,7 +23,7 @@
 }
 
 .nav_menu {
-    margin: 0;
+    margin: 0px 24px;
     list-style: none;
     display: flex;
     color: white;
@@ -30,4 +31,15 @@
 
 .nav_menu li {
     padding: 8px 12px;
+}
+
+.title_a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Jua KR', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Playfair Display', serif;
 }
