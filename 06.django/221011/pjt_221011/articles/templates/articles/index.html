@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+
+{% block body%}
+<h1 class="my-3 text-center">게시판</h1>
+<div class="container">
+    <div class="my-3 d-flex justify-content-end">
+        <a class="btn btn-outline-primary" href="{% url 'accounts:signup' %}">가입하기</a>
+    </div>
+    <img class="img-fluid" src="{% static 'images/h2.jpg' %}" alt="">
+    <div class=" my-3 d-flex justify-content-end">
+        <a class="btn btn-link btn btn-sm" href="{% url 'articles:create' %}">작성하기</a>
+    </div>
+    <div>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>게시글</th>
+                    <th>작성일</th>
+                    <th>수정일</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for article in articles %}
+                <tr>
+                    <td><a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a></td>
+                    <td>{{ article.created_at|date:"SHORT_DATETIME_FORMAT" }}</td>
+                    <td>{{ article.updated_at|date:"y-m-d D" }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
