@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+<h1>{{ user.username }}님의 프로필</h1>
+{% endblock body %}

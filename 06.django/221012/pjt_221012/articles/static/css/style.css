@@ -1,0 +1,43 @@
+container {
+    display: contents;
+    justify-self: center;
+    height: 1200px;
+    width: 70%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(9, 9, 14);
+    padding: 8px 12px;
+}
+
+.navbar_a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_logo {
+    font-size: 24px;
+    color: white;
+}
+
+.nav_logo i {
+    color: orange;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav_menu li {
+    padding: 8px 12px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
