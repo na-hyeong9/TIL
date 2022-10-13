@@ -1,0 +1,52 @@
+{% load django_bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="https://kit.fontawesome.com/9dfbf66130.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+  {% bootstrap_css %}
+
+  {% block css %}
+  {% endblock css %}
+</head>
+
+<body>
+  {% if request.user.is_authenticated %}
+  <nav class="navbar">
+    <div class="nav_logo">
+      <i class="m-3 fa-solid fa-film"></i>
+      <a class="navbar_a" href="{% url 'articles:index' %}">Hello notice</a>
+    </div>
+    <ul class="nav_menu">
+      <li class="text-success"><a href="{% url 'accounts:detail' user.pk %}">{{ user }} 님</a></li>
+      <li><a class="navbar_a" href="{% url 'accounts:logout' %}">로그아웃</a></li>
+    </ul>
+  </nav>
+  {% else %}
+  <nav class="navbar">
+    <div class="nav_logo">
+      <i class="m-3 fa-solid fa-film"></i>
+      <a class="navbar_a" href="">Hello notice</a>
+    </div>
+    <ul class="nav_menu">
+      <li><a class="navbar_a" href="{% url 'accounts:login' %}">로그인</a></li>
+      <li> <a class="navbar_a" href="{% url 'accounts:signup' %}">가입하기</a>
+      </li>
+    </ul>
+  </nav>
+  {% endif %}
+  <div class="container">
+    {% block body %}
+    {% endblock body %}
+  </div>
+  {% bootstrap_javascript %}
+</body>
+
+</html>
