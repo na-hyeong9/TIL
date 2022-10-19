@@ -1,0 +1,35 @@
+{% load django_bootstrap5 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9dfbf66130.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+    {% bootstrap_css %}
+
+</head>
+{% block css %}
+{% endblock css %}
+
+<body>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <i class="m-3 fa-brands fa-shopify"></i>
+            <a class="nav_a" href="{% url 'articles:index' %}">RE:hello</a>
+        </div>
+        <ul class="nav_menu">
+            <li><a class="nav_a" href="#">로그인</a></li>
+            <li> <a class="nav_a" href="#">가입하기</a></li>
+        </ul>
+    </nav>
+    {% block body %}
+    {% endblock body %}
+    {% bootstrap_javascript %}
+</body>
+
+</html>

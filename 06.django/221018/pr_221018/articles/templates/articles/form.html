@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+{% if request.resolver_match.url_name == 'create' %}
+<h1 class="my-3 text-center"> 글쓰기 </h1>
+{% else %}
+<h1 class="my-3 text-center"> 수정하기 </h1>
+{% endif %}
+<form action="" method="POST" enctype=" multipart/form-data"></form>
+{% bootstrap_form article_form %}
+<div class="d-grid gap-2">
+    {% bootstrap_button button_type="submit" content="OK" %}
+</div>
+</form>
+{% endblock %}

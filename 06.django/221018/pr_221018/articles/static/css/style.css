@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+
+.nav_a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav_menu li {
+    padding: 8px 12px;
+}
+
+.nav_logo {
+    font-size: 24px;
+}
+
+.nav_logo i {
+    height: 24px;
+    color: aquamarine;
+}
