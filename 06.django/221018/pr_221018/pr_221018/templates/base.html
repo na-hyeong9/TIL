@@ -10,23 +10,69 @@
     <script src="https://kit.fontawesome.com/9dfbf66130.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     {% bootstrap_css %}
 
 </head>
 {% block css %}
 {% endblock css %}
 
-<body>
+<body class="bg-black">
+    {% if request.user.is_authenticated %}
     <nav class="navbar">
         <div class="nav_logo">
             <i class="m-3 fa-brands fa-shopify"></i>
             <a class="nav_a" href="{% url 'articles:index' %}">RE:hello</a>
         </div>
         <ul class="nav_menu">
-            <li><a class="nav_a" href="#">로그인</a></li>
-            <li> <a class="nav_a" href="#">가입하기</a></li>
+            <li><a class="nav_a" href="{% url 'accounts:detail' %}">내 정보</a></li>
+            <li> <a class="nav_a" href="{% url 'account:logout'%}">로그아웃</a></li>
         </ul>
     </nav>
+    {% else %}
+    <nav class="navbar">
+        <div class="nav_logo">
+            <i class="m-3 fa-brands fa-shopify"></i>
+            <a class="nav_a" href="{% url 'articles:index' %}">RE:hello</a>
+        </div>
+        <ul class="nav_menu">
+            <li>
+                <a data-toggle="modal" href="#loginModal">LOGIN</a>
+                <div class="modal fade" id="loginModal" role="dialog">
+                 <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h1 class="modal-title" align="center">로그인</h1>
+                   </div>
+                   <div class="modal-body">
+                    <th:block th:replace="~{/member/login :: setLogin(~{this::login} )}"></th:block>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </li>
+               <li>
+                <a data-toggle="modal" href="#loginModal">LOGIN</a>
+                <div class="modal fade" id="loginModal" role="dialog">
+                 <div class="modal-dialog">
+                  <div class="modal-content">
+                   <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h1 class="modal-title" align="center">로그인</h1>
+                   </div>
+                   <div class="modal-body">
+                    <th:block th:replace="~{/member/login :: setLogin(~{this::login} )}"></th:block>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </li>
+        </ul>
+    </nav>
+    {% endif %}
     {% block body %}
     {% endblock body %}
     {% bootstrap_javascript %}

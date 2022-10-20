@@ -30,3 +30,7 @@
     height: 24px;
     color: aquamarine;
 }
+
+.card_text {
+    margin: 0;
+}

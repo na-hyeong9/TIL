@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="my-3 container text-white">
+    <p class="fs-3 fw-bold">{{ article.title }}</p>
+
+    {% if article.image %}
+    <img src="{{ article.image.url }}" alt="{{ article.image }}" width="400" height="300">
+    {% endif %}
+    <p class="my-5">{{ article.content }}</p>
+    <a class="nav_a btn btn-link" href="{% url 'articles:index' %}">돌아가기</a>
+    <a class="nav_a btn btn-link" href="{% url 'articles:update' article.pk %}">수정</a>
+    <!-- 삭제 모달 -->
+    <a class="p-0 nav_a btn btn-link" data-bs-toggle="modal" data-bs-target="#delete-modal">
+        삭제
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="delete-modal" tabindex="-1" aria-labelledby="delete-liber" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="delete-liber">삭제하시겠습니까?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    삭제하면 내용을 되돌릴 수 없습니다.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    <a class="btn btn-danger" href="{% url 'articles:delete' article.pk %}">삭제하기</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

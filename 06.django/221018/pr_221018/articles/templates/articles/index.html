@@ -5,24 +5,29 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 {% endblock %}
 
-{% block body %}
+{% block body%}
 <div class="container">
-    <a href="{% url 'articles:create'%}">작성하기</a>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for article in articles %}
-        <div class="col-3">
-            <div class="card text-bg-dark">
-                <img src="{{article.image.url}}" class="card-img" alt="{{article.title}}">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">{{article.title}}</h5>
-                    <p class="card-text">{{article.content}}</p>
-                    <p class="card-text"><small>{{article.create_at}}</small></p>
+
+    <div class=" my-3 d-flex justify-content-end">
+        <a class="" href="{% url 'articles:create' %}">작성하기</a>
+    </div>
+    <div>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            {% for article in articles %}
+            <div class="col">
+                <div class="card text-bg-dark" style="height: 100%; max-width: auto;">
+                    <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none; color:wheat"
+                                href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+                        </h5>
+                        <p class="m-0 text-muted">{{article.create_at}}</p>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+
     </div>
-
 </div>
-
 {% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+{% if error %}
+<h3 class="text-danger">{{ error }}</h3>
+{% endif %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <div class="form-row mb-3 mt-5">
+        <div class="col-12">
+            <label for="username">Username</label>
+            <div>{{ form.username }}</div>
+        </div>
+    </div>
+    <div class="form-row mb-3">
+        <div class="col-6">
+            <label for="password">Password</label>
+            <div>{{ form.password }}</div>
+        </div>
+        <div class="col-6">
+            <label for="password_confirm">Password Confirm</label>
+            <div>{{ form.password_confirm }}</div>
+        </div>
+    </div>
+    <div class="form-row mb-3">
+        <div class="col-6">
+            <label for="last_name">Last name</label>
+            <div>{{ form.last_name }}</div>
+        </div>
+        <div class="col-6">
+            <label for="last_name">First name</label>
+            <div>{{ form.first_name }}</div>
+        </div>
+    </div>
+    <div class="form-row mb-3">
+        <div class="col-12">
+            <label for="email">Email</label>
+            <div>{{ form.email }}</div>
+        </div>
+    </div>
+    <div class="form-row mb-3">
+        <button type="submit" class="btn btn-info col-12">SIGN UP</button>
+    </div>
+    <div class="form-row mb-3">
+        <a href="/community/" class="btn btn-secondary col-12">CANCEL</a>
+    </div>
+</form>
+{% endblock %}
