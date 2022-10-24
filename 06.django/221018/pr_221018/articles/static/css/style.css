@@ -34,3 +34,22 @@
 .card_text {
     margin: 0;
 }
+
+.banner_box {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.banner_img {
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.like_icon {
+    text-decoration: none;
+    color: red;
+}

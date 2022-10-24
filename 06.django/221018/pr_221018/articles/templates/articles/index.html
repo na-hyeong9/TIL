@@ -6,10 +6,16 @@
 {% endblock %}
 
 {% block body%}
+<div class="banner_box">
+    <img class="banner_img" src="{% static 'image/waves-1920.jpg' %}" alt="wave">
+    <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+</div>
 <div class="container">
-
     <div class=" my-3 d-flex justify-content-end">
-        <a class="" href="{% url 'articles:create' %}">작성하기</a>
+        <a class="btn-sm btn btn-outline-dark text-light" href="{% url 'articles:create' %}">작성하기</a>
     </div>
     <div>
         <div class="row row-cols-1 row-cols-md-4 g-4">
@@ -18,10 +24,15 @@
                 <div class="card text-bg-dark" style="height: 100%; max-width: auto;">
                     <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
                     <div class="card-body">
-                        <h5 class="card-title"><a style="text-decoration: none; color:wheat"
+                        <h5 class="my-2 card-title tw-border">
+                            <a style="text-decoration: none; color:wheat"
                                 href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
                         </h5>
-                        <p class="m-0 text-muted">{{article.create_at}}</p>
+                        <p class="text-sm">{{article.user}}</p>
+                        <p class="text-muted">{{article.create_at}}</p>
+                        {% if comments %}
+                        <p><b>{{ comments|length }}개의 댓글</b></p>
+                        {% endif %}
                     </div>
                 </div>
             </div>
