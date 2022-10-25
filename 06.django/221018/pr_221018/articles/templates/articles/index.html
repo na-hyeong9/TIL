@@ -28,7 +28,7 @@
                             <a style="text-decoration: none; color:wheat"
                                 href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
                         </h5>
-                        <p class="text-sm">{{article.user}}</p>
+                        <a href="{% url 'accounts:detail' article.user.pk %}">{{ article.user.username }}</a>
                         <p class="text-muted">{{article.create_at}}</p>
                         {% if comments %}
                         <p><b>{{ comments|length }}개의 댓글</b></p>

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CustomUserChangeForm, CustomUserCreationForm
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login as auth_login
@@ -66,3 +66,19 @@ def update(request):
         form = CustomUserChangeForm(instance=request.user)
     context = {"form": form}
     return render(request, "accounts/update.html", context)
+
+
+@login_required
+def follow(request, pk):
+    # 프로필에 해당하는 유저를 로그인한 유저가!
+    user = get_object_or_404(get_user_model(), pk=pk)
+    if request.user == user:
+        messages.warning(request, "스스로 팔로우 할 수 없습니다.")
+        return redirect("accounts:detail", pk)
+    if request.user in user.followers.all():
+        # 팔로우 상태이면
+        user.followers.remove(request.user)
+    else:
+        # 팔로우 상태가 아니면
+        user.followers.add(request.user)
+    return redirect("accounts:detail", pk)

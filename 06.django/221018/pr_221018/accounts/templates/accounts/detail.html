@@ -13,16 +13,62 @@
         <h1 class="text-center"><span class="fw-bold">{{user.username}}</span>님, 환영합니다.</h1>
     </div>
     <dl class="row">
+        {% if request.user == user %}
         <dt class="col-sm-3">이름</dt>
         <dd class="col-sm-9">{{ user.full_name }}</dd>
 
         <dt class="col-sm-3">이메일</dt>
         <dd class="col-sm-9">{{ user.email }}</dd>
+        {% endif %}
+
+        <dt class="col-sm-3">팔로우</dt>
+        <dd class="col-sm-9">{{ user.followers.all|length }}</dd>
+
+        <dt class="col-sm-3">팔로잉</dt>
+        <dd class="col-sm-9">{{ user.followings.count }}</dd>
     </dl>
 
+    <div class="d-flex justify-content-end">
+        {% if request.user == user %}
+        <a class="m-1 btn btn-secondary" href="{% url 'accounts:update' %}">회원 수정</a>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button class=" m-1 btn btn-secondary">회원 탈퇴</button>
+        </form>
+        {% endif %}
+    </div>
+
+    {% if request.user != user %}
+    <a href="{% url 'accounts:follow' user.pk %}">
+        {% if request.user in user.followers.all %}
+        팔로우 취소
+        {% else %}
+        팔로우
+        {% endif %}
+    </a>
+    {% endif %}
+
+    <hr>
+    <h5>작성한 글 목록</h5>
+    <!-- 유저가 쓴 글 (역참조) -->
+    {% for article in user.article_set.all %}
+    <a href="{% url 'articles:detail' article.pk %}">
+        <ol>
+            <li>
+                {{ article.title }}
+            </li>
+        </ol>
+    </a>
+    {% endfor %}
+    <h5>좋아요한 글 목록</h5>
+    <!-- 유저가 좋아요한 글 -->
+    {% for article in user.like_articles.all %}
+    <a href="{% url 'articles:detail' article.pk %}">
+        <p>{{ article.title }}</p>
+    </a>
+    {% endfor %}
     <div>
-        <a href="{% url 'accounts:update'%}">내 정보 수정</a><br>
-        <a href="{% url 'articles:index'%}">홈으로</a>
+        <a class="btn btn-secondary" href="{% url 'articles:index'%}">홈으로</a>
     </div>
 </div>
 

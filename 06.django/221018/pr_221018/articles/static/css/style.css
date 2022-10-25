@@ -12,7 +12,7 @@
     color: white;
 }
 
-.nav_menu {
+.menu {
     display: flex;
     list-style: none;
     margin: 0;
@@ -37,7 +37,7 @@
 
 .banner_box {
     width: 100%;
-    height: 600px;
+    height: 300px;
     overflow: hidden;
     margin: 0 auto;
 }
