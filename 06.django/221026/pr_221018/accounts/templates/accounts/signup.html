@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block body %}
+
+{% if error %}
+<h3 class="text-danger">{{ error }}</h3>
+{% endif %}
+<div class="my-5 text-light d-flex justify-content-center">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <div class="d-grid gap-2">
+                {% bootstrap_button class="btn btn-info" content="OK" %}
+            </div>
+        </form>
+</div>
+
+{% endblock %}

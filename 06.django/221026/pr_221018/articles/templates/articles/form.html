@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+<!-- 확인된 URL을 나타내는 ResolverMatch 인스턴스입니다. 이 속성은 URL이 해결된 후에만 설정되며, URL이 해결되기 전에 실행되는 미들웨어에서는 사용할 수 없지만 모든 보기에서 사용할 수
+있습니다(process_view()에서 사용할 수 있습니다). -->
+
+<div class="container text-white">
+    {% if request.resolver_match.url_name == 'create' %}
+    <h1 class="my-3 text-center"> </h1>
+    {% else %}
+    <h1 class="my-3 text-center"></h1>
+    {% endif %}
+
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% bootstrap_form article_form %}
+        <div class="d-grid gap-2">
+            {% bootstrap_button button_type="submit" content="OK" %}
+        </div>
+    </form>
+</div>
+{% endblock %}

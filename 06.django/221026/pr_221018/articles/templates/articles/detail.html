@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="my-3 container text-white">
+    <p class="fs-3 fw-bold">{{ article.title }}</p>
+
+    {% if article.image %}
+    <img src="{{ article.image.url }}" alt="{{ article.image }}" width=p00" height="300">
+    {% endif %}
+    <div class="my-2">
+        <!-- 로그인 했다면 -->
+        {% if request.user.is_authenticated %}
+            {% if request.user in article.like_users.all %}
+            <i  id="like-btn" data-article-id="{{ article.pk }}" class="fa-solid fa-heart"></i>
+            {% else %}
+            <i  id="like-btn" data-article-id="{{ article.pk }}" class="fa-regular fa-heart"></i>
+            {% endif %}<span id="like-count">{{ article.like_users.count }}</span>
+        {% endif %}
+    </div>
+
+    <p class="my-5">{{ article.content }}</p>
+    <div class="d-flex justify-content-end">
+        <a class="nav_a btn btn-link" href="{% url 'articles:index' %}">돌아가기</a>
+        {% if request.user == article.user %}
+        <a class="nav_a btn btn-link" href="{% url 'articles:update' article.pk %}">수정</a>
+        {% endif %}
+        <!-- 삭제 모달 -->
+        <a class="nav_a btn btn-link" data-bs-toggle="modal" data-bs-target="#delete-modal">
+            삭제
+        </a>
+        <!-- Modal -->
+        <div class="modal fade" id="delete-modal" tabindex="-1" aria-labelledby="delete-liber" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="delete-liber">삭제하시겠습니까?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        삭제하면 내용을 되돌릴 수 없습니다.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                        <a class="btn btn-danger" href="{% url 'articles:delete' article.pk %}">삭제하기</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="my-3">댓글</p>
+    <ul class="menu">
+        {% for comment in comments %}
+        <li>
+            {{ comment.user }} - {{ comment.content }}
+            <!--delete-->
+            {% if user == comment.user %}
+            <form action="{% url 'articles:comments_delete' article.pk comment.pk %}" method="POST" class="d-inline">
+                {% csrf_token %}
+                <button type="submit">삭제</button>
+            </form>
+            {% endif %}
+        </li>
+        {% empty %}
+        <p>댓글이 없어요..</p>
+        {% endfor %}
+    </ul>
+
+    <hr>
+
+    <!--create-->
+    {% if request.user.is_authenticated %}
+    <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+        {% csrf_token %}
+        <div class="row d-flex align-items-center">
+            <div class=" col-11 p-0">
+                {% bootstrap_form comment_form layout='floating'%}
+            </div>
+            <div class="col-1">
+                <button class="btn btn-light" type="submit">등록</button>
+            </div>
+        </div>
+    </form>
+    {% else %}
+    <a href="{% url 'accounts:login' %}">[댓글을 작성하려면 로그인하세요.]</a>
+    {% endif %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  // (1) 좋아요 버튼
+  const likeBtn = document.querySelector('#like-btn')
+  // (2) 좋아요 버튼을 클릭하면, 함수 실행
+  likeBtn.addEventListener('click', function (event) {
+    // 서버로 비동기 요청을 하고 싶음
+    console.log(event.target.dataset)
+    axios({
+      method: 'get',
+      url: `/articles/${event.target.dataset.articleId}/like/`
+    })
+    .then(response => {
+      console.log(response)
+      console.log(response.data)
+      // event.target.classList.toggle('bi-heart')
+      // event.target.classList.toggle('bi-heart-fill')
+      if (response.data.isLiked === true) {
+        event.target.classList.add('bi-heart-fill')
+        event.target.classList.remove('bi-heart')
+      } else {
+        event.target.classList.add('bi-heart')
+        event.target.classList.remove('bi-heart-fill')
+      }
+      const likeCount = document.querySelector('#like-count')
+      likeCount.innerText = response.data.likeCount
+    })
+  })
+</script>
+{% endblock %}
