@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="my-5 d-flex justify-content-center">
+    <form class="w-30" action="" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <div class="d-grid gap-2">
+            {% bootstrap_button button_type="submit" content="OK" %}
+        </div>
+    </form>
+</div>
+{% endblock %}

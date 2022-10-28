@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block css%}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    {% if request.user == user %}
+    <div class="my-5">
+        <h1 class="text-center"><span class="fw-bold">{{user.username}}</span>님, 환영합니다.</h1>
+    </div>
+    {% else %}
+    div class="my-5">
+        <h1 class="text-center"><span class="fw-bold">{{user.username}}</span>님의 프로필</h1>
+    </div>
+    {% endif %}
+    <dl class="m-5 row">
+        {% if request.user == user %}
+        <dt class="my-2 col-sm-3 text-warning">이름</dt>
+        <dd class="col-sm-9">{{ user.full_name }}</dd>
+
+        <dt class="my-2 col-sm-3 text-warning">이메일</dt>
+        <dd class="col-sm-9">{{ user.email }}</dd>
+        {% endif %}
+
+        <dt class="my-2 col-sm-3 text-warning">팔로우</dt>
+        <dd class="col-sm-9">{{ user.followers.all|length }}</dd>
+
+        <dt class="my-2 col-sm-3 text-warning">팔로잉</dt>
+        <dd class="col-sm-9">{{ user.followings.count }}</dd>
+    </dl>
+
+    <div class="d-flex justify-content-end">
+        {% if request.user == user %}
+        {% csrf_token %}
+        <form action="{% url 'accounts:update' %}" method="POST">
+            <button class=" m-1 btn btn-secondary">회원정보 수정</button>
+        </form>
+        <form action="" method="POST">
+            <button class=" m-1 btn btn-secondary">회원 탈퇴</button>
+        </form>
+        {% endif %}
+    </div>
+
+    {% if request.user != user %}
+    <a href="{% url 'accounts:follow' user.pk %}">
+        {% if request.user in user.followers.all %}
+        팔로우 취소
+        {% else %}
+        팔로우
+        {% endif %}
+    </a>
+    {% endif %}
+    <hr>
+    <div class="my-5">
+        <div class="m-5">
+            <h5 class="my-2">작성한 글 목록</h5>
+            <!-- 유저가 쓴 글 (역참조) -->
+            {% for article in user.article_set.all %}
+            <a class="text_a" href="{% url 'articles:detail' article.pk %}">
+                <ul class="menu">
+                    <li class="menu li">
+                        {{ article.title }}
+                    </li>
+                </ul>
+            </a>
+            {% endfor %}
+        </div>
+        <div class="m-5">
+            <h5 class="my-2">좋아요한 글 목록</h5>
+            <!-- 유저가 좋아요한 글 -->
+            {% for article in user.like_articles.all %}
+            <a class="text_a" href="{% url 'articles:detail' article.pk %}">
+                <p>{{ article.title }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-secondary" href="{% url 'articles:index'%}">홈으로</a>
+    </div>
+</div>
+
+{% endblock %}

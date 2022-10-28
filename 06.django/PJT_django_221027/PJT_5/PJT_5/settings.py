@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "reviews",
+    "accounts",
     "imagekit",
     "django_bootstrap5",
     "django.contrib.admin",
@@ -132,4 +133,4 @@ MEDIA_LOOT = BASE_DIR / "media"  # 파일필드를 통한 저장 시에, 실제 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODE = "account.user"
+AUTH_USER_MODEL = "accounts.user"
