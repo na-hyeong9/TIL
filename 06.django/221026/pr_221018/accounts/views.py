@@ -97,3 +97,15 @@ def follow(request, pk):
         # 팔로우 상태가 아니면
         user.followers.add(request.user)
     return redirect("accounts:detail", pk)
+
+
+# 카카오 소셜로그인 구현
+class KakaoSignInView(View):
+    def get(self, request):
+        app_key = KAKAO_REST_API_KEY
+        redirect_uri = "http://localhost:8000/accounts/signin/kakao/callback"
+        kakao_auth_api = "https://kauth.kakao.com/oauth/authorize?response_type=code"
+
+        return redirect(
+            f"{kakao_auth_api}&client_id={app_key}&redirect_uri={redirect_uri}"
+        )

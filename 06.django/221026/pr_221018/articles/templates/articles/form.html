@@ -11,9 +11,9 @@
 
 <div class="container text-white">
     {% if request.resolver_match.url_name == 'create' %}
-    <h1 class="my-3 text-center"> </h1>
+    <h1 class="my-3 text-center">게시글 작성</h1>
     {% else %}
-    <h1 class="my-3 text-center"></h1>
+    <h1 class="my-3 text-center">게시글 수정</h1>
     {% endif %}
 
     <form action="" method="POST" enctype="multipart/form-data">

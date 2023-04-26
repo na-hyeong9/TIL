@@ -23,6 +23,10 @@ class Article(models.Model):
         settings.AUTH_USER_MODEL, related_name="like_articles"
     )
 
+    @property
+    def full_name(self):
+        return f"{self.last_name}{self.first_name}"
+
 
 class Comment(models.Model):
     content = models.TextField()
