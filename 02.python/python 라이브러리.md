@@ -97,4 +97,42 @@ from itertools import *
   # [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
   ```
 
+
+
+
+### ✅math
+
+수학 함수와 상수를 제공
+
+```python
+import math
+```
+
+
+
+- math.ceil(x)
+
+  > x보다 크거나 같은 최소 정수를 반환하는 함수입니다.
+
+  ```python
+  import math
+  
+  x = 2.1
+  result = math.ceil(x)
+  print(result) # 출력 결과: 3
+  ```
+
+- math.pow(x, y)
+
+  >  x의 y 제곱을 계산하여 반환하는 함수
+
+  ```python
+  import math
+  
+  x = 2
+  y = 3
+  result = math.pow(x, y)
+  print(result) # 출력 결과: 8.0
+  ```
+
   
