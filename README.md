@@ -20,10 +20,13 @@
 </details>
 
 <details>
-<summary><b>JS</b> (2)</summary>
+<summary><b>JS</b> (5)</summary>
 <ul>
-  <li><a href="./js/es6-syntax.md">ES6 Syntax</a></li>
-  <li><a href="./js/modern-js.md">Modern JS</a></li>
+  <li><a href="./js/es6_syntax.md">ES6 Syntax</a></li>
+  <li><a href="./js/modern_js.md">Modern JS</a></li>
+  <li><a href="./js/modern_js-2-what_is_async.md">Modern JS-2-what_is_async</a></li>
+  <li><a href="./js/scope_execution_context.md">scope_execution_context</a></li>
+  <li><a href="./js/async_callback_promise.md">async_callback_promise</a></li>
 </ul>
 </details>
 
@@ -55,7 +58,7 @@
 
 <div align="right">
 <div align="right">
-Total: 10 &nbsp;|&nbsp; Last updated: 2026.04.10
+Total: 12 &nbsp;|&nbsp; Last updated: 2026.04.10
 </div>
 
 ---
