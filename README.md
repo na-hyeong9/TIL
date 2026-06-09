@@ -5,17 +5,20 @@
 ---
 
 <details>
-<summary><b>CSS</b> (2)</summary>
+<summary><b>CSS</b> (5)</summary>
 <ul>
   <li><a href="./css/reset-strategy.md">Reset Strategy</a></li>
   <li><a href="./css/scss-mixin.md">SCSS Mixin</a></li>
+  <li><a href="./css/flexbox-layout.md">Flexbox, 웹 레이아웃의 기본</a></li>
+  <li><a href="./css/grid-layout.md">Grid, 2차원 레이아웃의 시작</a></li>
+  <li><a href="./css/position-zindex.md">position과 z-index, 쌓임 맥락의 이해</a></li>
 </ul>
 </details>
 
 <details>
 <summary><b>HTML</b> (1)</summary>
 <ul>
-  <li><a href="./html/basic-layout.md">Basic Layout</a></li>
+  <li><a href="./html/basic-layout.md">기초 레이아웃: 시멘틱 태그와 웹 접근성</a></li>
 </ul>
 </details>
 
@@ -32,7 +35,10 @@
 </details>
 
 <details>
-<summary><b>Lib</b> (0)</summary>
+<summary><b>Lib</b> (1)</summary>
+<ul>
+  <li><a href="./lib/gsap-basics.md">GSAP Basics</a></li>
+</ul>
 </details>
 
 <details>
@@ -50,16 +56,25 @@
 </details>
 
 <details>
-<summary><b>Troubleshooting</b> (2)</summary>
+<summary><b>Troubleshooting</b> (4)</summary>
 <ul>
   <li><a href="./troubleshooting/gsap-scrolltrigger.md">GSAP ScrollTrigger</a></li>
   <li><a href="./troubleshooting/mobile-keyboard-layout.md">Mobile Keyboard Layout</a></li>
+    <li><a href="./troubleshooting/why-switched-to-ts.md">익숙한 JSX를 버리고 TSX로</a></li>
+  <li><a href="./troubleshooting/migration-jsx-to-tsx.md">JSX에서 TSX로 마이그레이션</a></li>
+</ul>
+</details>
+
+<details>
+<summary><b>TypeScript</b> (1)</summary>
+<ul>
+  <li><a href="./ts/why-typescript.md">TypeScript를 쓰는 이유</a></li>
 </ul>
 </details>
 
 <div align="right">
 <div align="right">
-Total: 13 &nbsp;|&nbsp; Last updated: 2026.04.10
+Total: 20 &nbsp;|&nbsp; Last updated: 2026.06.09
 </div>
 
 ---
