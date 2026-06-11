@@ -30,7 +30,7 @@
   <li><a href="./js/modern_js-2-what_is_async.md">Modern JS-2-what_is_async</a></li>
   <li><a href="./js/scope_execution_context.md">scope_execution_context</a></li>
   <li><a href="./js/async_callback_promise.md">async_callback_promise</a></li>
-  <li><a href="./js/event_loop.md.md">/event_loop</a></li>
+  <li><a href="./js/event_loop.md.md">event_loop</a></li>
 </ul>
 </details>
 
@@ -66,15 +66,16 @@
 </details>
 
 <details>
-<summary><b>TypeScript</b> (1)</summary>
+<summary><b>TypeScript</b> (3)</summary>
 <ul>
   <li><a href="./ts/why-typescript.md">TypeScript를 쓰는 이유</a></li>
+  <li><a href="./ts/generic.md">유틸리티 타입, TS가 미리 만들어둔 도구들</a></li>
+  <li><a href="./ts/utility-types.md">제네릭(Generic), 타입도 인자처럼 넘길 수 있다</a></li>
 </ul>
 </details>
 
 <div align="right">
-<div align="right">
-Total: 20 &nbsp;|&nbsp; Last updated: 2026.06.09
+Total: 22 &nbsp;|&nbsp; Last updated: 2026.06.09
 </div>
 
 ---
