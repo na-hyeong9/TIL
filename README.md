@@ -66,16 +66,20 @@
 </details>
 
 <details>
-<summary><b>TypeScript</b> (3)</summary>
+<summary><b>TypeScript</b> (7)</summary>
 <ul>
   <li><a href="./ts/why-typescript.md">TypeScript를 쓰는 이유</a></li>
-  <li><a href="./ts/generic.md">유틸리티 타입, TS가 미리 만들어둔 도구들</a></li>
-  <li><a href="./ts/utility-types.md">제네릭(Generic), 타입도 인자처럼 넘길 수 있다</a></li>
+  <li><a href="./ts/type-vs-interface.md">type과 interface, 뭐가 다르고 언제 쓸까</a></li>
+  <li><a href="./ts/generic.md">제네릭(Generic), 타입도 인자처럼 넘길 수 있다</a></li>
+  <li><a href="./ts/utility-types.md">유틸리티 타입, TS가 미리 만들어둔 도구들</a></li>
+  <li><a href="./ts/mapped-types.md">맵드 타입, 내 손으로 Partial을 만들어보자</a></li>
+  <li><a href="./ts/conditional-types.md">조건부 타입, 타입 세계의 if문</a></li>
+  <li><a href="./ts/react-props-types.md">React props에서 타입 조합하기</a></li>
 </ul>
 </details>
 
 <div align="right">
-Total: 22 &nbsp;|&nbsp; Last updated: 2026.06.09
+Total: 24 &nbsp;|&nbsp; Last updated: 2026.06.09
 </div>
 
 ---
