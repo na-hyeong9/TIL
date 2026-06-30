@@ -5,20 +5,24 @@
 ---
 
 <details>
-<summary><b>CSS</b> (5)</summary>
+<summary><b>CSS</b> (8)</summary>
 <ul>
   <li><a href="./css/reset-strategy.md">Reset Strategy</a></li>
   <li><a href="./css/scss-mixin.md">SCSS Mixin</a></li>
   <li><a href="./css/flexbox-layout.md">Flexbox, 웹 레이아웃의 기본</a></li>
   <li><a href="./css/grid-layout.md">Grid, 2차원 레이아웃의 시작</a></li>
   <li><a href="./css/position-zindex.md">position과 z-index, 쌓임 맥락의 이해</a></li>
+  <li><a href="./css/box-model.md">box model과 box-sizing, 크기와 간격의 원리</a></li>
+  <li><a href="./css/typography.md">Typography: line-height와 letter-spacing</a></li>
+  <li><a href="./css/color-background.md">Color와 Background, 색과 배경의 기초</a></li>
 </ul>
 </details>
 
 <details>
-<summary><b>HTML</b> (1)</summary>
+<summary><b>HTML</b> (2)</summary>
 <ul>
   <li><a href="./html/basic-layout.md">기초 레이아웃: 시멘틱 태그와 웹 접근성</a></li>
+  <li><a href="./html/iframe.md">iframe을 쓰는 이유, 문서 안의 문서</a></li>
 </ul>
 </details>
 
@@ -79,7 +83,7 @@
 </details>
 
 <div align="right">
-Total: 24 &nbsp;|&nbsp; Last updated: 2026.06.09
+Total: 28 &nbsp;|&nbsp; Last updated: 2026.07.01
 </div>
 
 ---
