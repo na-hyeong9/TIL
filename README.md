@@ -5,7 +5,7 @@
 ---
 
 <details>
-<summary><b>CSS</b> (8)</summary>
+<summary><b>CSS</b> (9)</summary>
 <ul>
   <li><a href="./css/reset-strategy.md">Reset Strategy</a></li>
   <li><a href="./css/scss-mixin.md">SCSS Mixin</a></li>
@@ -15,6 +15,7 @@
   <li><a href="./css/box-model.md">box model과 box-sizing, 크기와 간격의 원리</a></li>
   <li><a href="./css/typography.md">Typography: line-height와 letter-spacing</a></li>
   <li><a href="./css/color-background.md">Color와 Background, 색과 배경의 기초</a></li>
+  <li><a href="./css/transition-animation.md">Transition과 Animation, 움직임의 기초</a></li>
 </ul>
 </details>
 
@@ -27,7 +28,7 @@
 </details>
 
 <details>
-<summary><b>JS</b> (6)</summary>
+<summary><b>JS</b> (7)</summary>
 <ul>
   <li><a href="./js/es6_syntax.md">ES6 Syntax</a></li>
   <li><a href="./js/modern_js.md">Modern JS</a></li>
@@ -35,6 +36,7 @@
   <li><a href="./js/scope_execution_context.md">scope_execution_context</a></li>
   <li><a href="./js/async_callback_promise.md">async_callback_promise</a></li>
   <li><a href="./js/event_loop.md.md">event_loop</a></li>
+  <li><a href="./js/event-delegation.md">이벤트 위임(Event Delegation), 버블링을 이용한 효율적인 이벤트 처리</a></li>
 </ul>
 </details>
 
@@ -83,7 +85,5 @@
 </details>
 
 <div align="right">
-Total: 28 &nbsp;|&nbsp; Last updated: 2026.07.01
+Total: 30 &nbsp;|&nbsp; Last updated: 2026.07.23
 </div>
-
----
